@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useAppSelector, useAppDispatch } from '../app/hooks';
-import { setSelectedCard, selectSelectedCard } from '../features/deckSlice';
+import { setSelectedCard, selectSelectedCard } from '../slices/deckSlice';
 import { Card } from '../cards';
 
 export const HandCard = ({

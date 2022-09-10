@@ -1,5 +1,5 @@
 import { useAppSelector } from '../app/hooks';
-import { selectDeck, selectGraveyard } from '../features/deckSlice';
+import { selectDeck, selectGraveyard } from '../slices/deckSlice';
 
 export interface CardPileProps {
   type: 'Deck' | 'Graveyard';

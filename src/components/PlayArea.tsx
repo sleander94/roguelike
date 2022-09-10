@@ -7,9 +7,9 @@ import {
   discard,
   playCard,
   selectMana,
-} from '../features/deckSlice';
-import { selectSelectedEnemy } from '../features/enemySlice';
-import { addBlock } from '../features/playerStatsSlice';
+} from '../slices/deckSlice';
+import { selectSelectedEnemy } from '../slices/enemySlice';
+import { addBlock } from '../slices/playerStatsSlice';
 
 export const PlayArea = () => {
   const selectedCard = useAppSelector(selectSelectedCard);

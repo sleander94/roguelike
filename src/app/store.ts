@@ -1,10 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-import testReducer from '../features/test/testSlice';
-import playerStatsReducer from '../features/playerStatsSlice';
-import enemiesReducer from '../features/enemySlice';
-import deckReducer from '../features/deckSlice';
-import gameLogicReducer from '../features/gameLogicSlice';
+import counterReducer from '../slices/counter/counterSlice';
+import testReducer from '../slices/test/testSlice';
+import playerStatsReducer from '../slices/playerStatsSlice';
+import enemiesReducer from '../slices/enemySlice';
+import deckReducer from '../slices/deckSlice';
+import gameLogicReducer from '../slices/gameLogicSlice';
 
 export const store = configureStore({
   reducer: {

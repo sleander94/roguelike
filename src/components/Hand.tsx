@@ -11,7 +11,7 @@ import {
   selectGraveyard,
   selectHand,
   selectHandSize,
-} from '../features/deckSlice';
+} from '../slices/deckSlice';
 import {
   startPlayerTurn,
   endPlayerTurn,
@@ -20,7 +20,7 @@ import {
   endEnemyTurn,
   selectEnemyTurn,
   startBattle,
-} from '../features/gameLogicSlice';
+} from '../slices/gameLogicSlice';
 import { HandCard } from './Card';
 
 export const Hand = () => {

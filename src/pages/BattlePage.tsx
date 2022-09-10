@@ -9,7 +9,7 @@ import {
   selectMana,
   selectMaxMana,
   refillMana,
-} from '../features/deckSlice';
+} from '../slices/deckSlice';
 import {
   startBattle,
   endBattle,
@@ -20,7 +20,7 @@ import {
   startEnemyTurn,
   endEnemyTurn,
   selectEnemyTurn,
-} from '../features/gameLogicSlice';
+} from '../slices/gameLogicSlice';
 import {
   damagePlayer,
   healPlayer,
@@ -29,12 +29,12 @@ import {
   selectHealth,
   selectMaxHealth,
   selectBlock,
-} from '../features/playerStatsSlice';
+} from '../slices/playerStatsSlice';
 import {
   addEnemy,
   selectEnemies,
   selectSelectedEnemy,
-} from '../features/enemySlice';
+} from '../slices/enemySlice';
 import { PlayArea } from '../components/PlayArea';
 import { DeckContainer } from '../containers/DeckContainer';
 import { ManaBar } from '../components/Manabar';

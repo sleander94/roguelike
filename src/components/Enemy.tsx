@@ -4,16 +4,16 @@ import {
   setSelected,
   selectEnemies,
   selectSelectedEnemy,
-} from '../features/enemySlice';
+} from '../slices/enemySlice';
 import {
   playCard,
   discard,
   draw,
   setSelectedCard,
   selectSelectedCard,
-} from '../features/deckSlice';
+} from '../slices/deckSlice';
 import { displayPartsToString } from 'typescript';
-import { selectMana } from '../features/deckSlice';
+import { selectMana } from '../slices/deckSlice';
 
 export interface EnemyProps {
   id: string;

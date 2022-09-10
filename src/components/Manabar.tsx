@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useAppSelector, useAppDispatch } from '../app/hooks';
-import { selectMana, selectMaxMana } from '../features/deckSlice';
+import { selectMana, selectMaxMana } from '../slices/deckSlice';
 
 export const ManaBar = () => {
   const mana = useAppSelector(selectMana);

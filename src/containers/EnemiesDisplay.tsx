@@ -5,7 +5,7 @@ import {
   addEnemy,
   selectEnemies,
   selectSelectedEnemy,
-} from '../features/enemySlice';
+} from '../slices/enemySlice';
 
 export const EnemiesDisplay = () => {
   const enemies = useAppSelector(selectEnemies);

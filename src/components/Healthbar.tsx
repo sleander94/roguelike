@@ -4,7 +4,7 @@ import {
   selectBlock,
   selectHealth,
   selectMaxHealth,
-} from '../features/playerStatsSlice';
+} from '../slices/playerStatsSlice';
 
 export interface HealthbarProps {
   health: number;
