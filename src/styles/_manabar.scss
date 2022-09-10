@@ -1,0 +1,19 @@
+#player-mana {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-self: start;
+  align-self: end;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  #mana-orbs {
+    display: flex;
+    gap: 0.5rem;
+    .orb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 1px solid blue;
+    }
+  }
+}

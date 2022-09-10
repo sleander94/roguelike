@@ -1,0 +1,19 @@
+#battle-page {
+  display: grid;
+  grid: 1fr 100px 30vh / 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+  min-height: 100vh;
+  .end-turn {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: end;
+    margin: 1rem;
+    padding: 4px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .end-turn:hover {
+    cursor: pointer;
+  }
+}

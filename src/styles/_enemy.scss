@@ -1,0 +1,20 @@
+.enemy {
+  display: flex;
+  gap: 1rem;
+  .healthbar {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    border: 1px solid;
+    width: 150px;
+    text-align: center;
+    .number {
+      grid-area: 1 / 1 / 2 / 2;
+      z-index: 2;
+    }
+    .fill {
+      grid-area: 1 / 1 / 2 / 2;
+      height: 100%;
+      background-color: red;
+    }
+  }
+}

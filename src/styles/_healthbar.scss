@@ -1,0 +1,19 @@
+.healthbar {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  display: grid;
+  margin: 2rem;
+  border: 1px solid;
+  width: 400px;
+  max-height: 3rem;
+  text-align: center;
+  font-weight: normal;
+  .number {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 2;
+  }
+  .fill {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+  }
+}
