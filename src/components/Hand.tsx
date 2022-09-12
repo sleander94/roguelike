@@ -28,6 +28,10 @@ export const Hand = () => {
   const enemyTurn = useAppSelector(selectEnemyTurn);
 
   useEffect(() => {
+    dispatch(shuffle());
+  }, []);
+
+  useEffect(() => {
     if (playerTurn) {
       dispatch(fill());
     }
@@ -42,10 +46,6 @@ export const Hand = () => {
   const deck = useAppSelector(selectDeck);
   const graveyard = useAppSelector(selectGraveyard);
 
-  useEffect(() => {
-    dispatch(shuffle());
-  }, []);
-
   const dispatch = useAppDispatch();
 
   return (
@@ -55,12 +55,12 @@ export const Hand = () => {
           return (
             <HandCard
               key={card.id}
+              targeted={card.targeted}
               id={card.id}
               name={card.name}
+              image={card.image}
               type={card.type}
               cost={card.cost}
-              damage={card.damage}
-              block={card.block}
               effect={card.effect}
             />
           );
